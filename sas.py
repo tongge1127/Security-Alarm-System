@@ -32,7 +32,7 @@ class ObjectDetection:
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.recording = False
         self.out = None
-        self.recording_directory = "recording"
+        self.recording_directory = "recording" # Change this to the folder you want the recording to be saved in 
 
     def predict(self, frame):
         results = self.model(frame)
